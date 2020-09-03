@@ -1,16 +1,16 @@
 {
    "$schema":"https://specs.frictionlessdata.io/schemas/table-schema.json",
-   "name":"objets-importants",
-   "title":"Schéma des objets importants",
-   "description":"Spécification du fichier d'échange relatif aux objets importants gérés par les collectivités.",
+   "name":"ovq",
+   "title":"Schéma des objets de la vie quotidienne",
+   "description":"Spécification du fichier d'échange relatif aux objets de la vie quotidienne.",
    "keywords":[
-      "objets",
-      "autre-tag"
+      "ovq",
+      "barometre"
    ],
    "countryCode":"FR",
-   "homepage":"https://github.com/mon-orga/schema-objets-importants",
-   "path":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/schema.json",
-   "image":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/irve.png",
+   "homepage":"https://github.com/geoffreyaldebert/test-schema-ovq",
+   "path":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/v0.1.1/schema.json",
+   "image":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/v0.1.1/ovq.png",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -22,50 +22,35 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/exemple-valide.csv"
+         "path":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/v0.1.1/exemple-valide.csv"
       }
    ],
    "sources":[
       {
-         "title":"Arrêté du 12 janvier 2017 relatif aux objets importants",
-         "path":"https://beta.legifrance.gouv.fr/codes/id/LEGISCTA000031367685/2020-05-25"
+         "title":"Suivi priorité ovq",
+         "path":"https://www.modernisation.gouv.fr/sites/default/files/document/circulaire_n_6117-sg_du_3_octobre_2019_relative_au_suivi_des_priorites_._.pdf"
       }
    ],
-   "created":"2018-06-29",
-   "lastModified":"2019-05-06",
+   "created":"2020-09-03",
+   "lastModified":"2020-09-03",
    "version":"0.1.1",
    "contributors":[
       {
-         "title":"John Smith",
-         "email":"john.smith@etalab.gouv.fr",
+         "title":"Geoffrey Aldebert",
+         "email":"geoffrey.aldebert@data.gouv.fr",
          "organisation":"Etalab",
          "role":"author"
-      },
-      {
-         "title":"Jane Doe",
-         "email":"jane.doe@example.com",
-         "organisation":"Association très importante",
-         "role":"contributor"
-      }
+      }                                                                                                                                                                                                                                                                               
    ],
    "fields":[
       {
-         "name":"id",
+         "name":"id_ovq",
          "description":"Un identifiant unique de l'objet.",
          "example":"42",
          "type":"integer",
          "constraints":{
             "required":true,
             "minimum":1
-         }
-      },
-      {
-         "name":"date_creation",
-         "description":"La date de création de l'objet, au format ISO 8601 AAAA-MM-DD.",
-         "example":"2020-02-27",
-         "type":"date",
-         "constraints":{
-            "required":true
          }
       },
       {
@@ -76,7 +61,70 @@
          "constraints":{
             "required":true
          }
+      },
+      {
+         "name":"description",
+         "description":"Le nom de l'objet.",
+         "example":"Brouette",
+         "type":"string",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"reg",
+         "description":"Le nom de l'objet.",
+         "example":"Brouette",
+         "type":"string",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"dep",
+         "description":"Le nom de l'objet.",
+         "example":"Brouette",
+         "type":"string",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"valeur",
+         "description":"Un identifiant unique de l'objet.",
+         "example":"42",
+         "type":"integer",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"unite",
+         "description":"Le nom de l'objet.",
+         "example":"Brouette",
+         "type":"string",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"date",
+         "description":"La date de création de l'objet, au format ISO 8601 AAAA-MM-DD.",
+         "example":"2020-02-27",
+         "type":"date",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"cible",
+         "description":"Le nom de l'objet.",
+         "example":"Brouette",
+         "type":"string",
+         "constraints":{
+            "required":true
+         }
       }
    ],
-   "primaryKey":"id"
+   "primaryKey":"id_ovq"
 }
