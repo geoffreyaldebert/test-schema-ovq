@@ -45,7 +45,7 @@
    "fields":[
       {
          "name":"id_ovq",
-         "description":"Un identifiant unique de l'objet.",
+         "description":"Un identifiant unique de l'ovq.",
          "example":"42",
          "type":"integer",
          "constraints":{
@@ -55,8 +55,8 @@
       },
       {
          "name":"nom",
-         "description":"Le nom de l'objet.",
-         "example":"Brouette",
+         "description":"Le nom de l'ovq.",
+         "example":"Taux d'incidence traffic",
          "type":"string",
          "constraints":{
             "required":true
@@ -64,8 +64,8 @@
       },
       {
          "name":"description",
-         "description":"Le nom de l'objet.",
-         "example":"Brouette",
+         "description":"La description de l'ovq.",
+         "example":"Ceci est un ovq qui signifie...",
          "type":"string",
          "constraints":{
             "required":true
@@ -73,8 +73,8 @@
       },
       {
          "name":"reg",
-         "description":"Le nom de l'objet.",
-         "example":"Brouette",
+         "description":"Code région",
+         "example":"01",
          "type":"string",
          "constraints":{
             "required":true
@@ -82,8 +82,8 @@
       },
       {
          "name":"dep",
-         "description":"Le nom de l'objet.",
-         "example":"Brouette",
+         "description":"Code département",
+         "example":"78",
          "type":"string",
          "constraints":{
             "required":true
@@ -91,7 +91,7 @@
       },
       {
          "name":"valeur",
-         "description":"Un identifiant unique de l'objet.",
+         "description":"valeur de l'indicateur",
          "example":"42",
          "type":"integer",
          "constraints":{
@@ -100,8 +100,8 @@
       },
       {
          "name":"unite",
-         "description":"Le nom de l'objet.",
-         "example":"Brouette",
+         "description":"unite de la valeur",
+         "example":"pourcentage",
          "type":"string",
          "constraints":{
             "required":true
@@ -109,7 +109,7 @@
       },
       {
          "name":"date",
-         "description":"La date de création de l'objet, au format ISO 8601 AAAA-MM-DD.",
+         "description":"La date de l'indicateur, au format ISO 8601 AAAA-MM-DD.",
          "example":"2020-02-27",
          "type":"date",
          "constraints":{
@@ -118,8 +118,8 @@
       },
       {
          "name":"cible",
-         "description":"Le nom de l'objet.",
-         "example":"Brouette",
+         "description":"Est-ce une vraie valeur ou une valeur cible ?",
+         "example":"F ou T",
          "type":"string",
          "constraints":{
             "required":true
