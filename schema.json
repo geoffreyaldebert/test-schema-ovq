@@ -9,8 +9,8 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/geoffreyaldebert/test-schema-ovq",
-   "path":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/v0.1.1/schema.json",
-   "image":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/v0.1.1/ovq.png",
+   "path":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/0.1.2/schema.json",
+   "image":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/0.1.2/ovq.png",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -22,7 +22,7 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/v0.1.1/exemple-valide.csv"
+         "path":"https://github.com/geoffreyaldebert/test-schema-ovq/raw/0.1.2/exemple-valide.csv"
       }
    ],
    "sources":[
@@ -33,7 +33,7 @@
    ],
    "created":"2020-09-03",
    "lastModified":"2020-09-03",
-   "version":"0.1.1",
+   "version":"0.1.2",
    "contributors":[
       {
          "title":"Geoffrey Aldebert",
